@@ -1,11 +1,20 @@
 {
   "name": "active-job",
-  "version": "0.1.1",
-  "description": "",
-  "main": "lib/active_job.js",
+  "version": "0.2.0",
+  "description": "A job queue abstraction for node.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "babel-node test/simple_job.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Steven Zeiler",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/bridges-framework/active-job.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.4.2",
+    "fivebeans": "^1.2.0",
+    "uuid": "^2.0.1"
+  }
 }
