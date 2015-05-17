@@ -1,4 +1,6 @@
-import ActiveJob from '../lib'
+import ActiveJob from '../dist'
+
+// Make sure to start beanstalkd on port 22122
 
 class SimpleJob extends ActiveJob.Base {
   perform(params, callback) {
