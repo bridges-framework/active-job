@@ -1,6 +1,6 @@
-import ActiveJob from '../lib'
+import {SQS} from '../lib'
 
-class MyQueue extends ActiveJob.SQS.Base {
+class MyQueue extends SQS.Base {
 
   type() { return 'xrp-payouts' }
 

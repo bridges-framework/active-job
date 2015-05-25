@@ -50,4 +50,18 @@ Performing the Job Later
 ````
 new ActiveJob.Worker(SendGoldJob).start()
 ````
+## Backends
+
+As a generic abstraction ActiveJob provides out of the box extensions
+for various queuing backend providers.
+
+### Default Adapter
+extends `ActiveJob.Base`
+
+### Beanstalkd Adapter
+extends `ActiveJob.Beanstalkd.Base`
+
+### SQS Adapter
+extends `ActiveJob.SQS.Base`
+
 
